@@ -1,0 +1,127 @@
+==========================================================================
+ICP BENCHMARK - 120 real YC companies, hand-labeled
+==========================================================================
+rows: 120   ICP positives: 30 (25.0%)   borderline: 21
+source: free YC OSS API (yc-oss.github.io/api), fetched 2026-08-14
+
+--------------------------------------------------------------------------
+ICP CLASSIFICATION (composite: b2b AND saas AND stage)
+--------------------------------------------------------------------------
+classifier        TP  FP  FN  TN    prec  recall      F1     acc
+enrich_all        30  90   0   0   0.250   1.000   0.400   0.250
+industry_tag      30  45   0  45   0.400   1.000   0.571   0.625
+rules             15   1  15  89   0.938   0.500   0.652   0.867
+rules_v2          29   6   1  84   0.829   0.967   0.892   0.942
+
+confusion matrix - enrich_all
+                 pred ICP   pred not
+  actual ICP           30          0
+  actual not           90          0
+
+confusion matrix - industry_tag
+                 pred ICP   pred not
+  actual ICP           30          0
+  actual not           45         45
+
+confusion matrix - rules
+                 pred ICP   pred not
+  actual ICP           15         15
+  actual not            1         89
+
+confusion matrix - rules_v2
+                 pred ICP   pred not
+  actual ICP           29          1
+  actual not            6         84
+
+--------------------------------------------------------------------------
+PER-AXIS ACCURACY (rules classifier)
+--------------------------------------------------------------------------
+  is_b2b     acc=0.850  prec=1.000  recall=0.811  F1=0.895   (TP=77 FP=0 FN=18)
+  is_saas    acc=0.650  prec=0.900  recall=0.486  F1=0.632   (TP=36 FP=4 FN=38)
+  stage_fit  acc=0.875  prec=0.745  recall=0.921  F1=0.824   (TP=35 FP=12 FN=3)
+
+  NOTE: stage_fit is a proxy axis (see RUBRIC.md), and going in it was the
+  axis expected to dominate the loss. It does not. is_saas is the weakest
+  axis by F1, and the error list below shows why.
+
+--------------------------------------------------------------------------
+SLICE: borderline rows excluded (the easy half of the set)
+--------------------------------------------------------------------------
+classifier          n  pos    prec  recall      F1
+enrich_all         99   29   0.293   1.000   0.453
+industry_tag       99   29   0.453   1.000   0.624
+rules              99   29   0.933   0.483   0.636
+rules_v2           99   29   0.875   0.966   0.918
+
+--------------------------------------------------------------------------
+COST PER RESOLVED LEAD
+--------------------------------------------------------------------------
+  cost_per_resolved_lead = unit_cost * (leads enriched) / (true ICP leads found)
+  'leads enriched' = predicted positives. unit_cost is an INPUT ASSUMPTION,
+  not a measured price, so it is swept rather than asserted.
+
+classifier        enriched  found  $0.02/call  $0.05/call  $0.10/call  $0.25/call
+enrich_all             120     30      $0.080      $0.200      $0.400      $1.000
+industry_tag            75     30      $0.050      $0.125      $0.250      $0.625
+rules                   16     15      $0.021      $0.053      $0.107      $0.267
+rules_v2                35     29      $0.024      $0.060      $0.121      $0.302
+
+  at $0.10/call, versus enriching every lead:
+    rules     calls  16 vs 120 ( 86.7% fewer) | ICP found 15/30 ( 50.0%) | $0.107 vs $0.400 per resolved lead
+    rules_v2  calls  35 vs 120 ( 70.8% fewer) | ICP found 29/30 ( 96.7%) | $0.121 vs $0.400 per resolved lead
+
+--------------------------------------------------------------------------
+ERRORS - rules, every one of them
+--------------------------------------------------------------------------
+  FN (missed real ICP)    OneSignal                 team=150  b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Engage customers through personalized omni-channel messaging
+  FP (wasted enrichment)  inDinero                  team=250  b2b 1/1 saas 0/1 stage 1/1
+      one_liner: Financial dashboard for businesses.
+  FN (missed real ICP)    Poll Everywhere           team=70   b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Interactive meetings and presentations
+  FN (missed real ICP)    UserGems                  team=100  b2b 1/1 saas 1/0 stage 1/1
+      one_liner: The AI Command Center for outbound and ABM
+  FN (missed real ICP)    ReadMe                    team=52   b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Beautiful, personalized, interactive developer hubs
+  FN (missed real ICP)    PocketSuite               team=30   b2b 1/1 saas 1/0 stage 1/1
+      one_liner: All-In-One Business Operating System by PocketSuite
+  FN (missed real ICP)    Salt Security             team=200  b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Protects organizations from getting breached through their APIs.
+  FN (missed real ICP)    Freshpaint                team=120  b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Customer data collection, safeguarding, & activation for healthcare
+  FN (missed real ICP)    Vori                      team=29   b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Vori is a modern operating system for supermarkets
+  FN (missed real ICP)    Riot                      team=160  b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Cybersecurity awareness for fast growing companies
+  FN (missed real ICP)    Arketa                    team=55   b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Everything for your fitness or wellness business.
+  FN (missed real ICP)    Fieldguide                team=200  b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Vertical AI for Audit & Advisory Firms
+  FN (missed real ICP)    Spline                    team=25   b2b 1/1 saas 1/0 stage 1/1
+      one_liner: Design and collaborate in multiple dimensions.
+  FN (missed real ICP)    Juicebox                  team=65   b2b 1/1 saas 1/0 stage 1/1
+      one_liner: AI-powered talent sourcing for recruiters
+  FN (missed real ICP)    Cercli                    team=28   b2b 1/1 saas 1/0 stage 1/1
+      one_liner: AI powered HR and Recruitment for people teams
+  FN (missed real ICP)    Mem0                      team=10   b2b 1/1 saas 1/1 stage 1/0
+      one_liner: The Memory layer for AI Agents
+
+--------------------------------------------------------------------------
+ERRORS - rules_v2, every one of them
+--------------------------------------------------------------------------
+  FP (wasted enrichment)  Zerocater                 team=140  b2b 1/1 saas 0/1 stage 1/1 [borderline]
+      one_liner: Zerocater is revolutionizing how companies feed their employees
+  FP (wasted enrichment)  inDinero                  team=250  b2b 1/1 saas 0/1 stage 1/1
+      one_liner: Financial dashboard for businesses.
+  FP (wasted enrichment)  Kalibrr                   team=51   b2b 1/1 saas 0/1 stage 0/1
+      one_liner: Kalibrr connects SEAsian talent to your local & global jobs.
+  FP (wasted enrichment)  Triplebyte                team=70   b2b 1/1 saas 0/1 stage 0/1
+      one_liner: Intelligent technical hiring.
+  FP (wasted enrichment)  garten                    team=201  b2b 1/1 saas 0/1 stage 0/1
+      one_liner: Creating workplace wellbeing.
+  FP (wasted enrichment)  Firstbase.io              team=50   b2b 1/1 saas 0/1 stage 1/1 [borderline]
+      one_liner: The all-in-one startup operating system
+  FN (missed real ICP)    Mem0                      team=10   b2b 1/1 saas 1/1 stage 1/0
+      one_liner: The Memory layer for AI Agents
+
+(true/pred shown per axis)
