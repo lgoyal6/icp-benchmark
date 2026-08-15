@@ -1,0 +1,121 @@
+id,name,is_b2b,is_saas,borderline,note
+67,Shopular,0,0,0,consumer cashback app; affiliate revenue not subscription
+76,OneSignal,1,1,0,b2b omnichannel messaging saas
+87,Cryptoseal,1,1,0,vpn-as-a-service; acquired
+114,Vapor,1,1,1,listing is incoherent (in-video ads vs swift server framework); open-source framework has no clear subscription line
+171,Zerocater,1,0,1,corporate catering and cafeteria operations; food service not software
+200,inDinero,1,0,0,explicitly bundles bookkeepers accountants and CPAs with the software; services-led
+282,Poll Everywhere,1,1,0,b2b presentation saas
+289,JustSpotted,0,0,0,consumer realtime search; ad supported
+302,Slinkset,1,1,1,white-label social news platform sold to site owners; consumer industry tag is misleading
+357,OMGPop,0,0,0,consumer social games
+410,Soylent,0,0,0,consumer packaged food
+423,Easel,1,1,0,web design tool; acquired
+432,OctaveWealth,1,0,0,operated by an SEC registered investment advisor; 401k provider not software
+477,PayTango,1,1,0,invoicing software; inactive
+506,Kalibrr,1,0,0,two-sided job marketplace; take rate
+532,EasyPost,1,1,0,shipping api
+576,Ambition,1,1,0,sales coaching and gamification saas
+698,Cheddar,0,0,0,consumer checking account
+703,UserGems,1,1,0,b2b gtm saas
+747,20n,1,0,0,biotech; DNA design for manufacturing and therapeutics
+781,BuildScience,1,1,0,building management software platform
+782,ReadMe,1,1,0,developer documentation saas
+810,GitLab,1,1,0,b2b devops saas but public company with 2000 staff
+860,Triplebyte,1,0,0,technical hiring marketplace; placement economics
+940,Traversal Networks,1,0,1,intrusion detection appliances plus analyst-assisted triage; hardware and service
+960,Bitmovin,1,1,0,video encoding and player dev tools
+1018,PocketSuite,1,1,0,all-in-one saas for service businesses
+1029,Monthli,1,1,1,one-liner says marketplace but description says saas platform for HOAs
+1043,Salt Security,1,1,0,api security saas
+1206,Rose Rocket,1,1,0,transportation management saas
+1211,SimpleCitizen,0,1,1,consumer immigration filing software; fee per application
+1220,Sway Finance,1,0,1,automated bookkeeping service; ml assisted but service delivery
+1237,garten,1,0,0,workplace nutrition and wellness services
+1244,Symple,1,1,0,field service logistics platform; acquired
+1460,LitHit,0,0,0,consumer smart shooting target hardware
+1512,Bulk MRO Industrial Supply,1,0,0,industrial distribution and commodity trade finance despite platform framing
+1669,Sunu,0,0,0,consumer assistive wearable hardware
+1751,ClearBrain,1,1,0,marketing analytics saas; acquired
+1813,Storyline,1,1,0,no-code alexa skills builder; inactive
+1852,Swipehouse,0,0,1,creator social network and brand deal matching; acquired
+1925,Optic,1,1,0,open source api dev tools; acquired
+2026,iLabService,1,1,1,labops saas for regulated labs; AIoT framing implies some hardware coupling
+4940,Wave,0,0,0,consumer mobile money for africa
+12534,Courier,1,1,0,notifications api
+12599,Sable,0,0,0,consumer neobank
+12630,Tandem,1,1,0,virtual office saas; inactive
+12666,spotLESS Materials,1,0,0,PFAS-free coatings; advanced materials
+12845,Freshpaint,1,1,0,healthcare data compliance saas
+12850,Curri,1,0,0,operates its own fleet for construction last-mile delivery
+12865,Blockstamp,1,1,0,industrial asset management software; inactive
+12890,Unflow,1,1,0,mobile cms saas; inactive
+13110,Flowdash,1,1,0,no-code internal tools saas; acquired
+13195,Zaam,1,1,0,business onboarding saas; inactive
+13206,Global Belly,1,0,1,social commerce marketplace; matches products to content for a cut
+13240,Vori,1,1,0,grocery operating system saas
+13311,Riot,1,1,0,cybersecurity awareness saas
+13312,PostHog,1,1,0,product analytics saas
+13330,Recurrency,1,1,0,erp automation saas
+13353,Hiration,0,1,0,resume saas sold to individual job seekers
+21794,Shuttle,1,1,0,backend developer platform; inactive
+22002,BIK,1,1,0,ecommerce crm saas
+22076,Dataland,1,1,1,calls itself an applied AI lab which reads services; ships an agent product with real ARR
+22084,Arketa,1,1,0,saas for fitness and wellness studios
+22272,Finch,1,1,0,employment data api
+22273,Fieldguide,1,1,0,vertical ai saas for audit and advisory firms
+22656,DreamWorld,0,0,0,consumer game
+22694,Vogent,1,1,0,voice agent platform; acquired
+22784,Huddlefire,1,1,1,saas partnership network; revenue model closer to a referral network
+22796,Firstbase.io,1,0,1,incorporation compliance bookkeeping and taxes; registered agent and filing services under a software wrapper
+22855,Mindee,1,1,0,document understanding api
+22906,LiveFlow,1,1,0,ai erp and fp&a saas
+23270,Alokai,1,1,0,frontend-as-a-service for ecommerce
+23277,Pagaloop,1,0,0,credit card financing and payments for business owners
+23368,Spline,1,1,0,3d design and collaboration tool
+23369,REGENT,1,0,0,all-electric seagliders; aerospace hardware
+23389,Gigs,1,1,0,embedded telecom platform and api
+23842,Hedgehog,0,0,0,consumer crypto robo-adviser
+23963,Gobillion,0,0,0,consumer group-buying ecommerce
+23986,Fingo Africa,0,0,0,consumer neobank
+24065,BoldVoice,0,1,0,consumer subscription accent coaching app
+24507,Warrant,1,1,0,authorization as a service; acquired
+24820,Medium Biosciences,1,0,0,AI-designed affinity reagents; physical biotech product
+24867,Cache,0,0,0,consumer convenience delivery via dark stores
+25419,Kaso,1,0,1,group purchasing aggregator for restaurants; margin on supply not subscription
+25876,Numida,1,0,0,working capital lending to micro businesses
+25978,Fleek,1,0,0,b2b wholesale marketplace for second hand fashion
+26019,AYC Fund,0,0,1,crypto hedge fund; sells to investors not to businesses
+26657,HyperDX,1,1,0,open source observability saas; acquired
+26739,Craze,0,1,1,ai video maker aimed at creators rather than companies
+26800,Juicebox,1,1,0,ai talent sourcing saas
+27157,Levers,1,1,0,accounts receivable saas
+27901,Orchid,1,1,1,ehr saas; buyers are independent solo practitioners
+27961,Hona,1,1,0,legal tech saas for personal injury firms
+28072,Helios,1,1,0,ai digital workers for b2b operations
+28404,Cercli,1,1,0,hr and payroll saas
+28958,Rimward,1,1,0,software on existing cctv; explicitly avoids hardware retrofit
+29110,AiSDR,1,1,0,ai sdr saas
+29184,DryMerge,1,1,0,ai agents that maintain crm records
+29365,Ellipsis,1,1,0,cloud platform for coding agents
+29416,Focal,0,1,0,consumer ai video creation tool
+29585,Mem0,1,1,0,memory layer api for ai agents
+29653,ideate.xyz,1,1,1,ai 3d art suite; buyer could be studios or hobbyists
+29786,Palmier,0,1,1,open source free video editor; no clear paid subscription and creator facing
+29808,Starcloud,1,0,0,data centers in space; hardware and satellites
+29839,pap!,0,0,0,consumer agent that claims cashback; takes a cut
+30039,Raycaster,1,1,0,ai document workspace for life sciences teams
+30118,Ember,1,1,1,healthcare revenue cycle; RCM vendors commonly price as a percent of collections
+30200,Karoo,0,0,0,consumer lending platform
+30303,AfterQuery,1,0,0,applied research lab curating data for foundation labs; data services not software
+30399,Frekil,1,1,0,real world evidence software for pharma
+30430,Almond,1,0,0,dual-arm robot hardware
+30438,Beluga,1,0,0,fully managed influencer marketing; agency service
+30560,Foundation Industries,1,0,0,low-volume high-mix contract manufacturing
+30566,Preseen,1,1,1,forecasting agents; likely sold to funds rather than operating businesses
+30622,Liva AI,1,0,0,collects targeted audio and video training data for model labs; data services
+30641,Overdrive Health,1,0,0,describes itself as medical billing services
+31418,Taiga,1,1,0,autonomous medical billing software
+31570,Rindler,1,1,0,web-to-agent translation layer
+32206,DeepReach Inc.,1,0,0,real-world data collection network for robotics; data services
+32526,Pluto,0,1,0,ai voice agent for individual professionals
