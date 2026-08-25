@@ -1,0 +1,16 @@
+icp-benchmark
+Copyright 2026 Laksh Goyal
+
+The code and the hand labels in this repository are licensed under the MIT
+License (see LICENSE).
+
+------------------------------------------------------------------------------
+Y Combinator company data
+
+yc_all.json is a pinned snapshot of Y Combinator's free public OSS companies API,
+fetched 2026-08-14 (6,168 companies). That data is YC's, not mine, and the MIT
+grant above does not extend to it. It is pinned rather than re-fetched because the
+live API changes, and re-fetching would silently change which 120 companies the
+stratified draw selects and invalidate the labels.
+
+labels.csv, RUBRIC.md and icp_eval.csv are my own work and are covered by LICENSE.
