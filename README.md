@@ -63,6 +63,28 @@ numbers move with them.
 | `evaluate.py` | metrics, confusion matrices, cost model, full error list |
 | `results/report.txt` | committed output of the command below |
 
+## The pipeline
+
+```mermaid
+flowchart LR
+  YC[("yc_all.json<br/>pinned snapshot, 6,168 companies")] --> BS["build_sample.py<br/>stratified draw, seed 20260814"]
+  BS --> UNL[("sample_unlabeled.jsonl<br/>120 companies")]
+  UNL --> HAND["hand labeling"]
+  RUB["RUBRIC.md<br/>the rules, including where<br/>the stage proxy is weak"] --> HAND
+  HAND --> LAB[("labels.csv<br/>is_b2b, is_saas, borderline, note")]
+  UNL --> MD["make_dataset.py<br/>joins, computes stage_fit and icp"]
+  LAB --> MD
+  MD --> EVAL[("icp_eval.csv<br/>the deliverable, 120 rows")]
+  EVAL --> CLS["classify.py<br/>four classifiers, two baselines"]
+  CLS --> EV["evaluate.py<br/>confusion matrices, cost model,<br/>full error list"]
+  EV --> REP[("results/report.txt")]
+
+  style EVAL fill:#1f6feb,color:#fff
+```
+
+The snapshot is pinned on purpose. The live YC API changes, so re-fetching would
+silently change which 120 companies you drew and make the labels meaningless.
+
 ## Reproduce
 
 From this directory, with system `python3` (3.14 here; stdlib only, no dependencies):
