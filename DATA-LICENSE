@@ -1,0 +1,28 @@
+Licences for the data files in this repository
+==============================================
+
+The code here is MIT (see LICENSE). The labeled
+set is licensed separately, so it can be reused as an evaluation set without
+taking on a code licence.
+
+icp_eval.csv
+labels.csv
+RUBRIC.md
+sample_unlabeled.jsonl
+----------------------
+Creative Commons Attribution 4.0 International (CC BY 4.0).
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+  "icp-benchmark labeled ICP set" by Laksh Goyal, CC BY 4.0.
+  Source: https://github.com/lgoyal6/icp-benchmark
+
+You may copy, redistribute, remix and build on these files for any purpose,
+including commercially, provided you give attribution. Reuse as an evaluation
+set, including relabeling under a different ICP definition, is the reason it is
+here. The labels and the rubric are my own judgement calls; RUBRIC.md documents
+exactly where the stage proxy is weak.
+
+yc_all.json
+-----------
+NOT covered by either licence above. It is a pinned snapshot of Y Combinator's
+free public OSS companies API and remains YC's data. See NOTICE.
