@@ -92,7 +92,7 @@ def rules(row):
 
 # --- classifier 4: rules with the saas axis inverted -------------------------
 # Written AFTER reading the error list from `rules`, so its numbers are in-sample
-# and should be read as an upper bound (see RESULTS.md). The change is one
+# and should be read as an upper bound (see results/report.txt). The change is one
 # principled edit, not per-row tuning: absence of software vocabulary in a
 # tagline is not evidence of absence of software, so the saas axis defaults to
 # yes and is vetoed only by an explicit non-software signal.

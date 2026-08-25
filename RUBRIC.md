@@ -53,7 +53,7 @@ that "Series A to C" is trying to name.
 **Where this proxy is wrong:** YC's `stage` field is coarse and is not re-derived per
 funding round. Companies that raised a large round without YC updating the flag land in
 the wrong bucket. This is disclosed rather than hidden, and the per-axis table in
-`RESULTS.md` reports the stage axis separately so its error can be read off directly.
+`results/report.txt` reports the stage axis separately so its error can be read off directly.
 
 ## Composite
 
@@ -65,7 +65,7 @@ icp = is_b2b AND is_saas AND stage_fit
 
 `1` marks rows where a careful second labeler could reasonably disagree. 21 of 120 rows
 are flagged. They are kept in the set and counted normally; they are also reported as a
-separate slice in `RESULTS.md`, because a benchmark that quietly drops its hard cases
+separate slice in `results/report.txt`, because a benchmark that quietly drops its hard cases
 reports a precision it did not earn.
 
 ---

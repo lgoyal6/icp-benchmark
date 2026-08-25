@@ -92,7 +92,7 @@ From this directory, with system `python3` (3.14 here; stdlib only, no dependenc
 ```bash
 python3 build_sample.py --raw yc_all.json --out sample_unlabeled.jsonl
 python3 make_dataset.py
-python3 evaluate.py
+python3 evaluate.py > results/report.txt
 ```
 
 Byte-identical on repeat runs. `yc_all.json` is pinned on purpose: the live API changes,
@@ -132,7 +132,7 @@ restatement of the labeling rule.
 
 ## Headline result
 
-See `../RESULTS.md` for the full tables. The short version: a plain keyword filter is
+See `results/report.txt` for the full tables. The short version: a plain keyword filter is
 precise and half-blind (P 0.938 / R 0.500), and the axis that breaks it is not the stage
 proxy, it is deciding whether a company is really SaaS. Fourteen of its fifteen misses
 are B2B SaaS companies whose taglines never say "software", "platform", or "SaaS".
