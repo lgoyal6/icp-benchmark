@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>icp-benchmark - the lead filter nobody measures</title>
+<meta name="description" content="120 real YC companies, hand-labeled on three axes. Enriching every lead is 25% precision. A rules filter gets 93.8% precision and misses half the real ones. Both numbers matter and neither is published anywhere.">
+<meta property="og:title" content="icp-benchmark">
+<meta property="og:description" content="Pick a filter, see what it costs you in leads and in dollars, and read every mistake it made by name.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="gut">
+  <div>
+    <div class="eyebrow">lgoyal6 / icp-benchmark</div>
+    <h1>icp&#8209;benchmark<span class="dot">.</span></h1>
+    <p class="thesis">
+      Tools that score whether an inbound lead matches your ideal customer profile ship
+      without any measurement of how often they are right, because building the labeled set
+      is the tedious part. So the labeled set is the point here, not the classifier.
+    </p>
+    <p class="thesis">
+      <strong>120 real YC companies, hand-labeled on three axes against a rubric written
+      before anything was scored.</strong> Twenty-one of them are borderline on purpose.
+      You cannot tune a filter you have never measured.
+    </p>
+  </div>
+  <dl class="facts">
+    <div class="fact"><dt>enrich everything</dt><dd>25% <small>precision, by definition</small></dd></div>
+    <div class="fact"><dt>a strict rule</dt><dd>93.8% <small>precision, half the leads</small></dd></div>
+    <div class="fact"><dt>the fixed rule</dt><dd>0.892 <small>F1, 29 of 30 found</small></dd></div>
+    <div class="fact"><dt>weakest axis</dt><dd>is_saas <small>not the one expected</small></dd></div>
+  </dl>
+</header>
+
+<section class="gut">
+  <div class="eyebrow">Figure 1</div>
+  <h2>What a filter actually buys you</h2>
+  <p class="lead">
+    Every classifier here is scored on the same 120 rows against the same hand labels.
+    Enriching every lead is the thing most teams do, and it is on the list so the others
+    have something honest to beat.
+  </p>
+
+  <div class="figure">
+    <div class="figcap">
+      <span id="cap-what">Loading</span>
+      <span id="cap-src"></span>
+    </div>
+    <div class="toolbar">
+      <span class="picklabel">Filter</span>
+      <div class="pick" id="clf" role="group" aria-label="Classifier"></div>
+    </div>
+    <dl class="readout">
+      <div><dt>precision</dt><dd id="r-prec">-</dd></div>
+      <div><dt>recall</dt><dd id="r-rec">-</dd></div>
+      <div><dt>F1</dt><dd id="r-f1">-</dd></div>
+      <div><dt>leads enriched</dt><dd id="r-enr">-</dd></div>
+      <div><dt>real ones found</dt><dd id="r-found">-</dd></div>
+    </dl>
+    <div class="cm" id="cm"></div>
+    <div class="banner" id="banner">Loading.</div>
+  </div>
+
+  <div class="split">
+    <div>
+      <h3>Precision and recall are a business decision, not a score</h3>
+      <p>
+        The strict rule is right <strong>93.8%</strong> of the time it says yes, and it says
+        no to half the real customers. The relaxed one is right 82.9% of the time and finds
+        <strong>29 of 30</strong>. Which is better depends entirely on whether a wasted
+        enrichment call costs more than a missed customer, and that is a question about your
+        business rather than about the model.
+      </p>
+      <p>
+        What is not defensible is shipping either one without knowing the numbers, which is
+        the state of every tool in this category.
+      </p>
+    </div>
+    <dl class="takeaway">
+      <dt>the default</dt>
+      <dd>Enrich everything.<small>100% recall, 25% precision, by construction.</small></dd>
+      <dt>the careful rule</dt>
+      <dd>Misses half of them.<small>93.8% precision, 50% recall.</small></dd>
+      <dt>the one to ship</dt>
+      <dd>rules_v2, F1 0.892.<small>29 of 30 found, 6 wasted calls.</small></dd>
+    </dl>
+  </div>
+</section>
+
+<section class="gut">
+  <div class="eyebrow">Figure 2</div>
+  <h2>What it costs per customer you actually find</h2>
+  <p class="lead">
+    Every predicted positive gets an enrichment call and only the true positives were worth
+    making. The price per call is an assumption, not a measurement, so it is swept rather
+    than asserted.
+  </p>
+  <div class="figure">
+    <div class="figcap">
+      <span>cost per resolved lead</span>
+      <span id="cap-cost"></span>
+    </div>
+    <div class="toolbar">
+      <span class="picklabel">Price per enrichment call</span>
+      <div class="pick" id="cost" role="group" aria-label="Unit cost"></div>
+    </div>
+    <canvas class="plot" id="plot" width="1200" height="280"></canvas>
+    <div class="banner" id="cost-banner"></div>
+  </div>
+</section>
+
+<section class="gut">
+  <div class="eyebrow">Figure 3</div>
+  <h2>Which axis actually fails, and every company it failed on</h2>
+  <p class="lead">
+    The composite label is B2B and SaaS and stage. Going in, stage was expected to dominate
+    the loss, because it is the one measured by proxy. It does not.
+  </p>
+  <div class="figure">
+    <div class="figcap">
+      <span id="cap-axis">per-axis agreement</span>
+      <span id="cap-errs"></span>
+    </div>
+    <div class="grid-wrap"><table class="data" id="axes"></table></div>
+    <div class="errs" id="errs"></div>
+    <div class="banner" id="err-banner"></div>
+  </div>
+
+  <div class="split">
+    <div>
+      <p>
+        <strong>is_saas is the weakest axis, at 0.632 F1, and stage_fit is not far off its
+        best.</strong> Nearly every missed customer has the same shape: a real B2B software
+        company whose one-line description never says software. "Interactive meetings and
+        presentations" is SaaS. "Cybersecurity awareness for fast growing companies" is
+        SaaS. A keyword rule reading one sentence cannot see it.
+      </p>
+      <p>
+        That is the finding worth having. The axis that looked risky was fine, and the one
+        that looked obvious was not, which is only visible because the set was labeled first.
+      </p>
+    </div>
+    <dl class="takeaway">
+      <dt>expected to fail</dt>
+      <dd>stage_fit, the proxy axis.<small>0.824 F1. It held up.</small></dd>
+      <dt>actually failed</dt>
+      <dd>is_saas.<small>0.632 F1, recall 0.486.</small></dd>
+      <dt>the failure mode</dt>
+      <dd>Software that never says software.<small>Read the misses below.</small></dd>
+    </dl>
+  </div>
+</section>
+
+<section class="gut">
+  <div class="eyebrow">Figure 4</div>
+  <h2>Where it loses</h2>
+  <ul class="map">
+    <li>
+      <b>120 rows is small and the labels are mine.</b> One labeller against a rubric
+      written beforehand. The rubric is in the repository so the labels can be argued with,
+      which is the most a set this size can offer.
+      <span class="where">RUBRIC.md</span>
+    </li>
+    <li>
+      <b>Stage is a proxy.</b> Series A to C is not published per company in the free API,
+      so it is inferred from team size and batch year. That is stated up front and it is the
+      axis most likely to be wrong in a way nobody can check.
+      <span class="where">RUBRIC.md</span>
+    </li>
+    <li>
+      <b>The classifier only sees what a form would give you.</b> A name, a one-liner,
+      industry tags, team size and batch. Anything a real enrichment vendor would fetch is
+      deliberately not here, which is why the ceiling is low.
+      <span class="where">classify.py</span>
+    </li>
+    <li>
+      <b>The price per call is an assumption.</b> It is swept over four values rather than
+      asserted at one, because no measured price was available and picking one would have
+      made the cost table look more precise than it is.
+      <span class="where">evaluate.py</span>
+    </li>
+  </ul>
+</section>
+
+<footer class="gut">
+  <span>
+    <a href="https://github.com/lgoyal6/icp-benchmark">github.com/lgoyal6/icp-benchmark</a>
+    &middot; MIT
+  </span>
+  <span>
+    also: <a href="https://lgoyal6.github.io/apparatus-comps/">apparatus-comps</a>
+    &middot; <a href="https://lgoyal6.github.io/memharness/">memharness</a>
+    &middot; <a href="https://lgoyal6.github.io/promptgate/">promptgate</a>
+  </span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
