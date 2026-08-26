@@ -8,6 +8,9 @@ have never measured, and measuring it requires a labeled set with hard negatives
 
 ---
 
+**[See it: lgoyal6.github.io/icp-benchmark](https://lgoyal6.github.io/icp-benchmark/)** - pick a
+filter, see what it costs in leads and in dollars, and read every mistake it made by name.
+
 ## The short version
 
 **What I noticed.** Tools that score whether a company matches an ideal customer profile
