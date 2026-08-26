@@ -1,0 +1,3520 @@
+{
+ "n": 120,
+ "positives": 30,
+ "borderline": 21,
+ "unit_costs": [
+  0.02,
+  0.05,
+  0.1,
+  0.25
+ ],
+ "classifiers": [
+  {
+   "name": "enrich_all",
+   "tp": 30,
+   "fp": 90,
+   "fn": 0,
+   "tn": 0,
+   "precision": 0.25,
+   "recall": 1.0,
+   "f1": 0.4,
+   "accuracy": 0.25,
+   "enriched": 120,
+   "found": 30,
+   "cost_per_resolved": {
+    "0.02": 0.08,
+    "0.05": 0.2,
+    "0.1": 0.4,
+    "0.25": 1.0
+   },
+   "axes": {
+    "is_b2b": {
+     "precision": 0.7916666666666666,
+     "recall": 1.0,
+     "f1": 0.8837209302325582,
+     "tp": 95,
+     "fp": 25,
+     "fn": 0
+    },
+    "is_saas": {
+     "precision": 0.6166666666666667,
+     "recall": 1.0,
+     "f1": 0.7628865979381444,
+     "tp": 74,
+     "fp": 46,
+     "fn": 0
+    },
+    "stage_fit": {
+     "precision": 0.31666666666666665,
+     "recall": 1.0,
+     "f1": 0.4810126582278481,
+     "tp": 38,
+     "fp": 82,
+     "fn": 0
+    }
+   },
+   "errors": [
+    {
+     "name": "Shopular",
+     "kind": "wasted",
+     "team_size": "11",
+     "one_liner": "Deals, Coupons & Cash Back for your favorite stores.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Cryptoseal",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Server key management, VPN as a Service, Privacy VPN.  Sold to\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Vapor",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "In-video advertising.",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Zerocater",
+     "kind": "wasted",
+     "team_size": "140",
+     "one_liner": "Zerocater is revolutionizing how companies feed their employees",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "inDinero",
+     "kind": "wasted",
+     "team_size": "250",
+     "one_liner": "Financial dashboard for businesses.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "JustSpotted",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Acquired by Google in 2011",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Slinkset",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Votable lists",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "OMGPop",
+     "kind": "wasted",
+     "team_size": "11",
+     "one_liner": "An independent flash game studio.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Soylent",
+     "kind": "wasted",
+     "team_size": "51",
+     "one_liner": "Soylent is a simple, nutritious, and affordable food that possesses\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Easel",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Easel is a visual design tool built for the web. Since the web is\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "OctaveWealth",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "The 401(k) that helps you grow",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "PayTango",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Simple invoicing",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Kalibrr",
+     "kind": "wasted",
+     "team_size": "51",
+     "one_liner": "Kalibrr connects SEAsian talent to your local & global jobs.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Cheddar",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "The Best Mobile Checking Account",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "20n",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Using AI to predict biochemistry for manufacturing and therapeutics",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "BuildScience",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "The operating system for commercial buildings.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "GitLab",
+     "kind": "wasted",
+     "team_size": "2000",
+     "one_liner": "A complete DevOps platform delivered as a single application.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Triplebyte",
+     "kind": "wasted",
+     "team_size": "70",
+     "one_liner": "Intelligent technical hiring.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Traversal Networks",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "Enterprise Threat Detection: Tuning, Triage, and Analysis by Experts.",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Monthli",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "Monthli is the first marketplace for homeowner associations.  We\u2026",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "SimpleCitizen",
+     "kind": "wasted",
+     "team_size": "23",
+     "one_liner": "From signup to citizenship, only SimpleCitizen guides applicants\u2026",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Sway Finance",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Sway is bringing AI to the accounting industry",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "garten",
+     "kind": "wasted",
+     "team_size": "201",
+     "one_liner": "Creating workplace wellbeing.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Symple",
+     "kind": "wasted",
+     "team_size": "11",
+     "one_liner": "Last mile logistics for delivery & service teams. We bring real-time\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "LitHit",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Smart Target for Shooting Sports",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Bulk MRO Industrial Supply",
+     "kind": "wasted",
+     "team_size": "170",
+     "one_liner": "Full Stack Fintech and Supply Chain Platform for Global Trade",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Sunu",
+     "kind": "wasted",
+     "team_size": "11",
+     "one_liner": "Audio and Haptics AR interface equipping blind users with super powers",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "ClearBrain",
+     "kind": "wasted",
+     "team_size": "10",
+     "one_liner": "Causal Analytics for Growth Teams",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Storyline",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Create Alexa Skills without coding",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Swipehouse",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "Meet other creators. Get daily matches. Find brand deals.",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Optic",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "Making APIs Developer-friendly ",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Wave",
+     "kind": "wasted",
+     "team_size": "1600",
+     "one_liner": "Mobile money app for Africa",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Sable",
+     "kind": "wasted",
+     "team_size": "12",
+     "one_liner": "Mobile bank for credit-worthy, new-to-America internationals offering\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Tandem",
+     "kind": "wasted",
+     "team_size": "10",
+     "one_liner": "Tandem is a virtual office for remote and distributed teams.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "spotLESS Materials",
+     "kind": "wasted",
+     "team_size": "6",
+     "one_liner": "Repellent coatings without PFAS",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Curri",
+     "kind": "wasted",
+     "team_size": "104",
+     "one_liner": "Construction & industrial logistics platform.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Blockstamp",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Blockstamp is an asset management software for industrial equipment",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Unflow",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "The next generation CMS built for mobile apps",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Flowdash",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "Quickly build internal tools for your ops team's manual workflows",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Zaam",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Zaam is an end-to-end SaaS solution for business onboarding.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Global Belly",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Marketplace enabling social commerce for brands and content creators. ",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Hiration",
+     "kind": "wasted",
+     "team_size": "22",
+     "one_liner": "We help job seekers quickly create resumes that get 2X more interviews",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Shuttle",
+     "kind": "wasted",
+     "team_size": "12",
+     "one_liner": "Build Backends. Fast.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Dataland",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "AI agents for customer support.",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "DreamWorld",
+     "kind": "wasted",
+     "team_size": "30",
+     "one_liner": "DreamWorld is a next-gen Minecraft with generative AI building",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Vogent",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Build Voice AI Agents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Huddlefire",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Turbocharge customer acquisition through exclusive SaaS partnerships",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Firstbase.io",
+     "kind": "wasted",
+     "team_size": "50",
+     "one_liner": "The all-in-one startup operating system",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Pagaloop",
+     "kind": "wasted",
+     "team_size": "23",
+     "one_liner": "Pay, Get Paid and Extend Cash Flow using your Credit Card as\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "REGENT",
+     "kind": "wasted",
+     "team_size": "40",
+     "one_liner": "All-electric seagliders for fast, affordable regional transportation",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Hedgehog",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "Cryptocurrency Robo-adviser. Buy. Balance. Relax.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Gobillion",
+     "kind": "wasted",
+     "team_size": "10",
+     "one_liner": "Pinduoduo for India",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Fingo Africa",
+     "kind": "wasted",
+     "team_size": "8",
+     "one_liner": "A neobank for Africa's 500 million youth",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "BoldVoice",
+     "kind": "wasted",
+     "team_size": "12",
+     "one_liner": "Speech and accent coaching app for non-native English speakers",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Warrant",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Authorization and access control as a service.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Medium Biosciences",
+     "kind": "wasted",
+     "team_size": "6",
+     "one_liner": "AI-designed Affinity Reagents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Cache",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Online convenience stores fulfilled by tiny, automated dark stores.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Kaso",
+     "kind": "wasted",
+     "team_size": "20",
+     "one_liner": "AI group purchasing for restaurants",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Numida",
+     "kind": "wasted",
+     "team_size": "115",
+     "one_liner": "Working capital for African micro businesses",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Fleek",
+     "kind": "wasted",
+     "team_size": "100",
+     "one_liner": "A B2B marketplace for wholesale second hand fashion",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "AYC Fund",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "AI-native crypto hedge fund",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "HyperDX",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "Open-source, dev-friendly observability.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Craze",
+     "kind": "wasted",
+     "team_size": "8",
+     "one_liner": "The AI Video Maker",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Levers",
+     "kind": "wasted",
+     "team_size": "8",
+     "one_liner": "Automating collection and boosting cashflow for B2B companies",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Orchid",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "AI-powered EHR for independent mental health professionals",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Helios",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Create your AI workforce",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Rimward",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "Low-false-positive intrusion detection for remote outdoor sites",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "AiSDR",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "AI sales prospecting. Replace your SDR with AiSDR",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "DryMerge",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "AI that updates your CRM for you",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Ellipsis",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Cloud platform for coding agents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Focal",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "AI video creation tool for TV shows and movies",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "ideate.xyz",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "ideate.xyz is an AI-powered 3D art suite on the web",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Palmier",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Video editor built for AI",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Starcloud",
+     "kind": "wasted",
+     "team_size": "12",
+     "one_liner": "Data centers in space",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "pap!",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Agents that earn consumers dollars when they shop, travel, and live.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Raycaster",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "AI for life sciences documents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Ember",
+     "kind": "wasted",
+     "team_size": "25",
+     "one_liner": "AI RCM. Increase net revenue by 16%. ",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Karoo",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "AI native consumer lending platform for underserved Americans",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "AfterQuery",
+     "kind": "wasted",
+     "team_size": "30",
+     "one_liner": "Applied research lab curating data solutions for foundation model\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Frekil",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "RWE Generation in minutes",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Almond",
+     "kind": "wasted",
+     "team_size": "6",
+     "one_liner": "A dual-arm robot built for physical AI.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Beluga",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Creator marketing that scales like paid ads",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Foundation Industries",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "We supply hard tech companies with critical components.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Preseen",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "The AI forecasting company for global macro events. ",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Liva AI",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "Audio & Video Data",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Overdrive Health",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "AI-Native Medical Billing Services",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Taiga",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Autonomous medical billing",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Rindler",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "The translation layer between AI agents and the web",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "DeepReach Inc.",
+     "kind": "wasted",
+     "team_size": "6",
+     "one_liner": "Real-world data network for robots & world models",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Pluto",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "AI voice agent that helps professionals get discovered",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 0,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "industry_tag",
+   "tp": 30,
+   "fp": 45,
+   "fn": 0,
+   "tn": 45,
+   "precision": 0.4,
+   "recall": 1.0,
+   "f1": 0.5714285714285715,
+   "accuracy": 0.625,
+   "enriched": 75,
+   "found": 30,
+   "cost_per_resolved": {
+    "0.02": 0.05,
+    "0.05": 0.125,
+    "0.1": 0.25,
+    "0.25": 0.625
+   },
+   "axes": {
+    "is_b2b": {
+     "precision": 1.0,
+     "recall": 0.7894736842105263,
+     "f1": 0.8823529411764706,
+     "tp": 75,
+     "fp": 0,
+     "fn": 20
+    },
+    "is_saas": {
+     "precision": 0.7733333333333333,
+     "recall": 0.7837837837837838,
+     "f1": 0.7785234899328859,
+     "tp": 58,
+     "fp": 17,
+     "fn": 16
+    },
+    "stage_fit": {
+     "precision": 0.31666666666666665,
+     "recall": 1.0,
+     "f1": 0.4810126582278481,
+     "tp": 38,
+     "fp": 82,
+     "fn": 0
+    }
+   },
+   "errors": [
+    {
+     "name": "Cryptoseal",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Server key management, VPN as a Service, Privacy VPN.  Sold to\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Zerocater",
+     "kind": "wasted",
+     "team_size": "140",
+     "one_liner": "Zerocater is revolutionizing how companies feed their employees",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "inDinero",
+     "kind": "wasted",
+     "team_size": "250",
+     "one_liner": "Financial dashboard for businesses.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Easel",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Easel is a visual design tool built for the web. Since the web is\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "OctaveWealth",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "The 401(k) that helps you grow",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "PayTango",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Simple invoicing",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Kalibrr",
+     "kind": "wasted",
+     "team_size": "51",
+     "one_liner": "Kalibrr connects SEAsian talent to your local & global jobs.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "GitLab",
+     "kind": "wasted",
+     "team_size": "2000",
+     "one_liner": "A complete DevOps platform delivered as a single application.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Triplebyte",
+     "kind": "wasted",
+     "team_size": "70",
+     "one_liner": "Intelligent technical hiring.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Traversal Networks",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "Enterprise Threat Detection: Tuning, Triage, and Analysis by Experts.",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Sway Finance",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Sway is bringing AI to the accounting industry",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "garten",
+     "kind": "wasted",
+     "team_size": "201",
+     "one_liner": "Creating workplace wellbeing.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Symple",
+     "kind": "wasted",
+     "team_size": "11",
+     "one_liner": "Last mile logistics for delivery & service teams. We bring real-time\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Bulk MRO Industrial Supply",
+     "kind": "wasted",
+     "team_size": "170",
+     "one_liner": "Full Stack Fintech and Supply Chain Platform for Global Trade",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "ClearBrain",
+     "kind": "wasted",
+     "team_size": "10",
+     "one_liner": "Causal Analytics for Growth Teams",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Storyline",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Create Alexa Skills without coding",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Optic",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "Making APIs Developer-friendly ",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Tandem",
+     "kind": "wasted",
+     "team_size": "10",
+     "one_liner": "Tandem is a virtual office for remote and distributed teams.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Unflow",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "The next generation CMS built for mobile apps",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Flowdash",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "Quickly build internal tools for your ops team's manual workflows",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Zaam",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Zaam is an end-to-end SaaS solution for business onboarding.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Global Belly",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Marketplace enabling social commerce for brands and content creators. ",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Shuttle",
+     "kind": "wasted",
+     "team_size": "12",
+     "one_liner": "Build Backends. Fast.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Dataland",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "AI agents for customer support.",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Vogent",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Build Voice AI Agents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Huddlefire",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Turbocharge customer acquisition through exclusive SaaS partnerships",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Firstbase.io",
+     "kind": "wasted",
+     "team_size": "50",
+     "one_liner": "The all-in-one startup operating system",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Warrant",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Authorization and access control as a service.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Kaso",
+     "kind": "wasted",
+     "team_size": "20",
+     "one_liner": "AI group purchasing for restaurants",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Fleek",
+     "kind": "wasted",
+     "team_size": "100",
+     "one_liner": "A B2B marketplace for wholesale second hand fashion",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "HyperDX",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "Open-source, dev-friendly observability.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Levers",
+     "kind": "wasted",
+     "team_size": "8",
+     "one_liner": "Automating collection and boosting cashflow for B2B companies",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Helios",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Create your AI workforce",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Rimward",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "Low-false-positive intrusion detection for remote outdoor sites",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "AiSDR",
+     "kind": "wasted",
+     "team_size": "5",
+     "one_liner": "AI sales prospecting. Replace your SDR with AiSDR",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "DryMerge",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "AI that updates your CRM for you",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Ellipsis",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "Cloud platform for coding agents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "ideate.xyz",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "ideate.xyz is an AI-powered 3D art suite on the web",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Raycaster",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "AI for life sciences documents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "AfterQuery",
+     "kind": "wasted",
+     "team_size": "30",
+     "one_liner": "Applied research lab curating data solutions for foundation model\u2026",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Beluga",
+     "kind": "wasted",
+     "team_size": "3",
+     "one_liner": "Creator marketing that scales like paid ads",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Preseen",
+     "kind": "wasted",
+     "team_size": "1",
+     "one_liner": "The AI forecasting company for global macro events. ",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Liva AI",
+     "kind": "wasted",
+     "team_size": "4",
+     "one_liner": "Audio & Video Data",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Rindler",
+     "kind": "wasted",
+     "team_size": "2",
+     "one_liner": "The translation layer between AI agents and the web",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "DeepReach Inc.",
+     "kind": "wasted",
+     "team_size": "6",
+     "one_liner": "Real-world data network for robots & world models",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "rules",
+   "tp": 15,
+   "fp": 1,
+   "fn": 15,
+   "tn": 89,
+   "precision": 0.9375,
+   "recall": 0.5,
+   "f1": 0.6521739130434783,
+   "accuracy": 0.8666666666666667,
+   "enriched": 16,
+   "found": 15,
+   "cost_per_resolved": {
+    "0.02": 0.021333333333333333,
+    "0.05": 0.05333333333333334,
+    "0.1": 0.10666666666666667,
+    "0.25": 0.26666666666666666
+   },
+   "axes": {
+    "is_b2b": {
+     "precision": 1.0,
+     "recall": 0.8105263157894737,
+     "f1": 0.8953488372093024,
+     "tp": 77,
+     "fp": 0,
+     "fn": 18
+    },
+    "is_saas": {
+     "precision": 0.9,
+     "recall": 0.4864864864864865,
+     "f1": 0.631578947368421,
+     "tp": 36,
+     "fp": 4,
+     "fn": 38
+    },
+    "stage_fit": {
+     "precision": 0.7446808510638298,
+     "recall": 0.9210526315789473,
+     "f1": 0.8235294117647057,
+     "tp": 35,
+     "fp": 12,
+     "fn": 3
+    }
+   },
+   "errors": [
+    {
+     "name": "OneSignal",
+     "kind": "missed",
+     "team_size": "150",
+     "one_liner": "Engage customers through personalized omni-channel messaging",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "inDinero",
+     "kind": "wasted",
+     "team_size": "250",
+     "one_liner": "Financial dashboard for businesses.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Poll Everywhere",
+     "kind": "missed",
+     "team_size": "70",
+     "one_liner": "Interactive meetings and presentations",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "UserGems",
+     "kind": "missed",
+     "team_size": "100",
+     "one_liner": "The AI Command Center for outbound and ABM",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "ReadMe",
+     "kind": "missed",
+     "team_size": "52",
+     "one_liner": "Beautiful, personalized, interactive developer hubs",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "PocketSuite",
+     "kind": "missed",
+     "team_size": "30",
+     "one_liner": "All-In-One Business Operating System by PocketSuite",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Salt Security",
+     "kind": "missed",
+     "team_size": "200",
+     "one_liner": "Protects organizations from getting breached through their APIs.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Freshpaint",
+     "kind": "missed",
+     "team_size": "120",
+     "one_liner": "Customer data collection, safeguarding, & activation for healthcare",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Vori",
+     "kind": "missed",
+     "team_size": "29",
+     "one_liner": "Vori is a modern operating system for supermarkets",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Riot",
+     "kind": "missed",
+     "team_size": "160",
+     "one_liner": "Cybersecurity awareness for fast growing companies",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Arketa",
+     "kind": "missed",
+     "team_size": "55",
+     "one_liner": "Everything for your fitness or wellness business.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Fieldguide",
+     "kind": "missed",
+     "team_size": "200",
+     "one_liner": "Vertical AI for Audit & Advisory Firms",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Spline",
+     "kind": "missed",
+     "team_size": "25",
+     "one_liner": "Design and collaborate in multiple dimensions.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Juicebox",
+     "kind": "missed",
+     "team_size": "65",
+     "one_liner": "AI-powered talent sourcing for recruiters",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Cercli",
+     "kind": "missed",
+     "team_size": "28",
+     "one_liner": "AI powered HR and Recruitment for people teams",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 0
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Mem0",
+     "kind": "missed",
+     "team_size": "10",
+     "one_liner": "The Memory layer for AI Agents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 0
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "rules_v2",
+   "tp": 29,
+   "fp": 6,
+   "fn": 1,
+   "tn": 84,
+   "precision": 0.8285714285714286,
+   "recall": 0.9666666666666667,
+   "f1": 0.8923076923076922,
+   "accuracy": 0.9416666666666667,
+   "enriched": 35,
+   "found": 29,
+   "cost_per_resolved": {
+    "0.02": 0.024137931034482762,
+    "0.05": 0.0603448275862069,
+    "0.1": 0.1206896551724138,
+    "0.25": 0.3017241379310345
+   },
+   "axes": {
+    "is_b2b": {
+     "precision": 1.0,
+     "recall": 0.8105263157894737,
+     "f1": 0.8953488372093024,
+     "tp": 77,
+     "fp": 0,
+     "fn": 18
+    },
+    "is_saas": {
+     "precision": 0.7216494845360825,
+     "recall": 0.9459459459459459,
+     "f1": 0.8187134502923976,
+     "tp": 70,
+     "fp": 27,
+     "fn": 4
+    },
+    "stage_fit": {
+     "precision": 0.7446808510638298,
+     "recall": 0.9210526315789473,
+     "f1": 0.8235294117647057,
+     "tp": 35,
+     "fp": 12,
+     "fn": 3
+    }
+   },
+   "errors": [
+    {
+     "name": "Zerocater",
+     "kind": "wasted",
+     "team_size": "140",
+     "one_liner": "Zerocater is revolutionizing how companies feed their employees",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "inDinero",
+     "kind": "wasted",
+     "team_size": "250",
+     "one_liner": "Financial dashboard for businesses.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Kalibrr",
+     "kind": "wasted",
+     "team_size": "51",
+     "one_liner": "Kalibrr connects SEAsian talent to your local & global jobs.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Triplebyte",
+     "kind": "wasted",
+     "team_size": "70",
+     "one_liner": "Intelligent technical hiring.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "garten",
+     "kind": "wasted",
+     "team_size": "201",
+     "one_liner": "Creating workplace wellbeing.",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 0,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Firstbase.io",
+     "kind": "wasted",
+     "team_size": "50",
+     "one_liner": "The all-in-one startup operating system",
+     "borderline": true,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 0,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 1
+      }
+     }
+    },
+    {
+     "name": "Mem0",
+     "kind": "missed",
+     "team_size": "10",
+     "one_liner": "The Memory layer for AI Agents",
+     "borderline": false,
+     "axes": {
+      "is_b2b": {
+       "gold": 1,
+       "pred": 1
+      },
+      "is_saas": {
+       "gold": 1,
+       "pred": 1
+      },
+      "stage_fit": {
+       "gold": 1,
+       "pred": 0
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "source": "free YC OSS API (yc-oss.github.io/api), fetched 2026-08-14"
+}
