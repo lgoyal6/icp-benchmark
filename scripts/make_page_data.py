@@ -93,6 +93,13 @@ def main() -> None:
         })
 
     payload = {
+        # Every labelled row, so the page can re-run the whole set through the
+        # in-browser classifier at load and show that it reproduces the score.
+        "rows": [
+            {k: r[k] for k in
+             ("name", "industries", "one_liner", "team_size", "batch", "icp", "borderline")}
+            for r in rows
+        ],
         "n": n,
         "positives": positives,
         "borderline": sum(int(r["borderline"]) for r in rows),
@@ -100,7 +107,13 @@ def main() -> None:
         "classifiers": classifiers,
         "source": "free YC OSS API (yc-oss.github.io/api), fetched 2026-08-14",
     }
+    # The page runs classify.py itself, in Pyodide, so a reader can score a
+    # company the repository never saw. Copying the module verbatim rather than
+    # porting it is what keeps the thing in the browser and the thing that was
+    # measured from drifting apart.
     OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "classify.py").write_text((ROOT / "classify.py").read_text())
+
     path = OUT / "eval.json"
     path.write_text(json.dumps(payload, indent=1) + "\n")
     print(f"{path.relative_to(ROOT)}  {path.stat().st_size / 1024:.1f} kB")
