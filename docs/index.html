@@ -35,6 +35,70 @@
 </header>
 
 <section class="gut">
+  <div class="eyebrow">Try it</div>
+  <h2>Score a company the set has never seen</h2>
+  <p class="lead">
+    This runs <code>classify.py</code> out of the repository, in your tab, on whatever you
+    type. Not a reimplementation and not a lookup: the same function that produced every
+    number below.
+  </p>
+
+  <div class="figure">
+    <div class="figcap">
+      <span id="engine-state">starting the engine</span>
+      <span id="engine-check">checking it against the labelled set</span>
+    </div>
+    <div class="toolbar">
+      <span class="picklabel">Or load one</span>
+      <div class="pick" id="examples" role="group" aria-label="Example companies"></div>
+    </div>
+    <div class="lead-form">
+      <label>What it does<textarea id="f-one" rows="2" spellcheck="false"
+        placeholder="Interactive meetings and presentations"></textarea></label>
+      <div class="row3">
+        <label>YC industry tags<input id="f-inds" spellcheck="false" placeholder="B2B|Marketing"></label>
+        <label>Headcount<input id="f-team" type="number" min="1" value="70"></label>
+        <label>Batch<input id="f-batch" spellcheck="false" placeholder="Summer 2016"></label>
+      </div>
+    </div>
+    <dl class="readout">
+      <div><dt>is it B2B</dt><dd id="a-b2b">-</dd></div>
+      <div><dt>is it SaaS</dt><dd id="a-saas">-</dd></div>
+      <div><dt>right stage</dt><dd id="a-stage">-</dd></div>
+      <div><dt>verdict</dt><dd id="a-icp">-</dd></div>
+      <div><dt>strict rule says</dt><dd id="a-rules">-</dd></div>
+    </dl>
+    <div class="banner" id="score-banner">Type something, or load an example.</div>
+  </div>
+
+  <div class="split">
+    <div>
+      <h3>What it is actually reading</h3>
+      <p>
+        Four fields, which is everything a signup form gives you. The B2B axis trusts the
+        industry tag when there is one and falls back to vocabulary. The stage axis is
+        headcount and years since the batch. <strong>The SaaS axis is the one that fails</strong>,
+        and you can make it fail: describe a real software company without using a software
+        word and watch it say no.
+      </p>
+      <p>
+        The engine self-checks at load. It re-runs all 120 labelled rows through the copy
+        in your browser and reports the score it gets, which should be the same 0.829 and
+        0.967 the repository publishes.
+      </p>
+    </div>
+    <dl class="takeaway">
+      <dt>try breaking it</dt>
+      <dd>"Beautiful, personalized, interactive developer hubs"<small>Real ICP. The strict rule says no.</small></dd>
+      <dt>and the other way</dt>
+      <dd>Add "hardware" or "marketplace"<small>One veto word flips the SaaS axis.</small></dd>
+      <dt>what it never sees</dt>
+      <dd>The website, the pricing page, anything.<small>Four form fields is the whole input.</small></dd>
+    </dl>
+  </div>
+</section>
+
+<section class="gut">
   <div class="eyebrow">Figure 1</div>
   <h2>What a filter actually buys you</h2>
   <p class="lead">
@@ -196,6 +260,7 @@
   </span>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

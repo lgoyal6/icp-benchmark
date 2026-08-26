@@ -1,4 +1,1086 @@
 {
+ "rows": [
+  {
+   "name": "Shopular",
+   "industries": "Consumer|Home and Personal",
+   "one_liner": "Deals, Coupons & Cash Back for your favorite stores.",
+   "team_size": "11",
+   "batch": "Winter 2012",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "OneSignal",
+   "industries": "B2B|Marketing",
+   "one_liner": "Engage customers through personalized omni-channel messaging",
+   "team_size": "150",
+   "batch": "Summer 2011",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Cryptoseal",
+   "industries": "B2B|Infrastructure",
+   "one_liner": "Server key management, VPN as a Service, Privacy VPN.  Sold to\u2026",
+   "team_size": "3",
+   "batch": "Summer 2011",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Vapor",
+   "industries": "Consumer|Social",
+   "one_liner": "In-video advertising.",
+   "team_size": "2",
+   "batch": "Summer 2011",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Zerocater",
+   "industries": "B2B|Office Management",
+   "one_liner": "Zerocater is revolutionizing how companies feed their employees",
+   "team_size": "140",
+   "batch": "Winter 2011",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "inDinero",
+   "industries": "B2B|Finance and Accounting",
+   "one_liner": "Financial dashboard for businesses.",
+   "team_size": "250",
+   "batch": "Summer 2010",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Poll Everywhere",
+   "industries": "B2B|Analytics",
+   "one_liner": "Interactive meetings and presentations",
+   "team_size": "70",
+   "batch": "Summer 2008",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "JustSpotted",
+   "industries": "Consumer|Content",
+   "one_liner": "Acquired by Google in 2011",
+   "team_size": "2",
+   "batch": "Summer 2008",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Slinkset",
+   "industries": "Consumer|Content",
+   "one_liner": "Votable lists",
+   "team_size": "2",
+   "batch": "Summer 2008",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "OMGPop",
+   "industries": "Consumer|Gaming",
+   "one_liner": "An independent flash game studio.",
+   "team_size": "11",
+   "batch": "Summer 2006",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Soylent",
+   "industries": "Consumer|Food and Beverage",
+   "one_liner": "Soylent is a simple, nutritious, and affordable food that possesses\u2026",
+   "team_size": "51",
+   "batch": "Summer 2012",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Easel",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Easel is a visual design tool built for the web. Since the web is\u2026",
+   "team_size": "2",
+   "batch": "Summer 2012",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "OctaveWealth",
+   "industries": "B2B|Human Resources",
+   "one_liner": "The 401(k) that helps you grow",
+   "team_size": "2",
+   "batch": "Summer 2012",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "PayTango",
+   "industries": "B2B|Finance and Accounting",
+   "one_liner": "Simple invoicing",
+   "team_size": "2",
+   "batch": "Winter 2013",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Kalibrr",
+   "industries": "B2B|Operations",
+   "one_liner": "Kalibrr connects SEAsian talent to your local & global jobs.",
+   "team_size": "51",
+   "batch": "Winter 2013",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "EasyPost",
+   "industries": "B2B|Supply Chain and Logistics",
+   "one_liner": "The shipping infrastructure of the internet.",
+   "team_size": "51",
+   "batch": "Summer 2013",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Ambition",
+   "industries": "B2B|Sales",
+   "one_liner": "Coaching and gamification software for sales teams. ",
+   "team_size": "55",
+   "batch": "Winter 2014",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Cheddar",
+   "industries": "Fintech|Banking and Exchange",
+   "one_liner": "The Best Mobile Checking Account",
+   "team_size": "2",
+   "batch": "Summer 2014",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "UserGems",
+   "industries": "B2B|Sales",
+   "one_liner": "The AI Command Center for outbound and ABM",
+   "team_size": "100",
+   "batch": "Summer 2014",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "20n",
+   "industries": "Healthcare|Industrial Bio",
+   "one_liner": "Using AI to predict biochemistry for manufacturing and therapeutics",
+   "team_size": "2",
+   "batch": "Winter 2015",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "BuildScience",
+   "industries": "Real Estate and Construction|Housing and Real Estate",
+   "one_liner": "The operating system for commercial buildings.",
+   "team_size": "1",
+   "batch": "Winter 2015",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "ReadMe",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Beautiful, personalized, interactive developer hubs",
+   "team_size": "52",
+   "batch": "Winter 2015",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "GitLab",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "A complete DevOps platform delivered as a single application.",
+   "team_size": "2000",
+   "batch": "Winter 2015",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Triplebyte",
+   "industries": "B2B|Recruiting and Talent",
+   "one_liner": "Intelligent technical hiring.",
+   "team_size": "70",
+   "batch": "Summer 2015",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Traversal Networks",
+   "industries": "B2B|Security",
+   "one_liner": "Enterprise Threat Detection: Tuning, Triage, and Analysis by Experts.",
+   "team_size": "1",
+   "batch": "Summer 2015",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Bitmovin",
+   "industries": "B2B|Infrastructure",
+   "one_liner": "Powers OTT online video providers with video developer tools.",
+   "team_size": "145",
+   "batch": "Summer 2015",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "PocketSuite",
+   "industries": "B2B|Productivity",
+   "one_liner": "All-In-One Business Operating System by PocketSuite",
+   "team_size": "30",
+   "batch": "Winter 2016",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Monthli",
+   "industries": "Real Estate and Construction|Housing and Real Estate",
+   "one_liner": "Monthli is the first marketplace for homeowner associations.  We\u2026",
+   "team_size": "4",
+   "batch": "Winter 2016",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Salt Security",
+   "industries": "B2B|Security",
+   "one_liner": "Protects organizations from getting breached through their APIs.",
+   "team_size": "200",
+   "batch": "Winter 2016",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Rose Rocket",
+   "industries": "B2B|Supply Chain and Logistics",
+   "one_liner": "Rose Rocket is ERP software for trucking companies.",
+   "team_size": "165",
+   "batch": "Summer 2016",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "SimpleCitizen",
+   "industries": "Consumer|Home and Personal",
+   "one_liner": "From signup to citizenship, only SimpleCitizen guides applicants\u2026",
+   "team_size": "23",
+   "batch": "Summer 2016",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Sway Finance",
+   "industries": "B2B|Finance and Accounting",
+   "one_liner": "Sway is bringing AI to the accounting industry",
+   "team_size": "2",
+   "batch": "Summer 2016",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "garten",
+   "industries": "B2B|Productivity",
+   "one_liner": "Creating workplace wellbeing.",
+   "team_size": "201",
+   "batch": "Summer 2016",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Symple",
+   "industries": "B2B|Finance and Accounting",
+   "one_liner": "Last mile logistics for delivery & service teams. We bring real-time\u2026",
+   "team_size": "11",
+   "batch": "Summer 2016",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "LitHit",
+   "industries": "Consumer|Consumer Electronics",
+   "one_liner": "Smart Target for Shooting Sports",
+   "team_size": "2",
+   "batch": "Winter 2017",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Bulk MRO Industrial Supply",
+   "industries": "B2B|Supply Chain and Logistics",
+   "one_liner": "Full Stack Fintech and Supply Chain Platform for Global Trade",
+   "team_size": "170",
+   "batch": "Winter 2017",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Sunu",
+   "industries": "Consumer|Virtual and Augmented Reality",
+   "one_liner": "Audio and Haptics AR interface equipping blind users with super powers",
+   "team_size": "11",
+   "batch": "Summer 2017",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "ClearBrain",
+   "industries": "B2B|Marketing",
+   "one_liner": "Causal Analytics for Growth Teams",
+   "team_size": "10",
+   "batch": "Winter 2018",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Storyline",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Create Alexa Skills without coding",
+   "team_size": "3",
+   "batch": "Winter 2018",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Swipehouse",
+   "industries": "Consumer|Social",
+   "one_liner": "Meet other creators. Get daily matches. Find brand deals.",
+   "team_size": "5",
+   "batch": "Winter 2018",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Optic",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Making APIs Developer-friendly ",
+   "team_size": "5",
+   "batch": "Summer 2018",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "iLabService",
+   "industries": "B2B|Productivity",
+   "one_liner": "AIoT monitoring, workflow, and evidence systems for regulated labs.",
+   "team_size": "50",
+   "batch": "Summer 2018",
+   "icp": "1",
+   "borderline": "1"
+  },
+  {
+   "name": "Wave",
+   "industries": "Fintech|Payments",
+   "one_liner": "Mobile money app for Africa",
+   "team_size": "1600",
+   "batch": "Winter 2012",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Courier",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "The fastest way for developers to build notifications for their app.",
+   "team_size": "35",
+   "batch": "Summer 2019",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Sable",
+   "industries": "Fintech|Consumer Finance",
+   "one_liner": "Mobile bank for credit-worthy, new-to-America internationals offering\u2026",
+   "team_size": "12",
+   "batch": "Summer 2019",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Tandem",
+   "industries": "B2B|Productivity",
+   "one_liner": "Tandem is a virtual office for remote and distributed teams.",
+   "team_size": "10",
+   "batch": "Summer 2019",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "spotLESS Materials",
+   "industries": "Industrials",
+   "one_liner": "Repellent coatings without PFAS",
+   "team_size": "6",
+   "batch": "Summer 2019",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Freshpaint",
+   "industries": "B2B|Infrastructure",
+   "one_liner": "Customer data collection, safeguarding, & activation for healthcare",
+   "team_size": "120",
+   "batch": "Summer 2019",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Curri",
+   "industries": "Real Estate and Construction|Construction",
+   "one_liner": "Construction & industrial logistics platform.",
+   "team_size": "104",
+   "batch": "Summer 2019",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Blockstamp",
+   "industries": "Industrials|Manufacturing and Robotics",
+   "one_liner": "Blockstamp is an asset management software for industrial equipment",
+   "team_size": "2",
+   "batch": "Summer 2019",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Unflow",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "The next generation CMS built for mobile apps",
+   "team_size": "5",
+   "batch": "Summer 2019",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Flowdash",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Quickly build internal tools for your ops team's manual workflows",
+   "team_size": "5",
+   "batch": "Winter 2020",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Zaam",
+   "industries": "B2B|Operations",
+   "one_liner": "Zaam is an end-to-end SaaS solution for business onboarding.",
+   "team_size": "2",
+   "batch": "Winter 2020",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Global Belly",
+   "industries": "B2B|Retail",
+   "one_liner": "Marketplace enabling social commerce for brands and content creators. ",
+   "team_size": "2",
+   "batch": "Winter 2020",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Vori",
+   "industries": "B2B|Retail",
+   "one_liner": "Vori is a modern operating system for supermarkets",
+   "team_size": "29",
+   "batch": "Winter 2020",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Riot",
+   "industries": "B2B|Security",
+   "one_liner": "Cybersecurity awareness for fast growing companies",
+   "team_size": "160",
+   "batch": "Winter 2020",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "PostHog",
+   "industries": "B2B|Analytics",
+   "one_liner": "The single platform to analyze, test, observe, and deploy new features",
+   "team_size": "150",
+   "batch": "Winter 2020",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Recurrency",
+   "industries": "B2B|Sales",
+   "one_liner": "Automated ERP for distributors.",
+   "team_size": "50",
+   "batch": "Summer 2020",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Hiration",
+   "industries": "Consumer|Job and Career Services",
+   "one_liner": "We help job seekers quickly create resumes that get 2X more interviews",
+   "team_size": "22",
+   "batch": "Winter 2020",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Shuttle",
+   "industries": "B2B|Infrastructure",
+   "one_liner": "Build Backends. Fast.",
+   "team_size": "12",
+   "batch": "Summer 2020",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "BIK",
+   "industries": "B2B|Retail",
+   "one_liner": "Agentic AI CRM for ecommerce",
+   "team_size": "55",
+   "batch": "Summer 2020",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Dataland",
+   "industries": "B2B|Operations",
+   "one_liner": "AI agents for customer support.",
+   "team_size": "4",
+   "batch": "Summer 2020",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Arketa",
+   "industries": "B2B|Operations",
+   "one_liner": "Everything for your fitness or wellness business.",
+   "team_size": "55",
+   "batch": "Summer 2020",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Finch",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Finch is the Employment Data Platform",
+   "team_size": "73",
+   "batch": "Summer 2020",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Fieldguide",
+   "industries": "B2B|Productivity",
+   "one_liner": "Vertical AI for Audit & Advisory Firms",
+   "team_size": "200",
+   "batch": "Summer 2020",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "DreamWorld",
+   "industries": "Consumer|Gaming",
+   "one_liner": "DreamWorld is a next-gen Minecraft with generative AI building",
+   "team_size": "30",
+   "batch": "Winter 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Vogent",
+   "industries": "B2B",
+   "one_liner": "Build Voice AI Agents",
+   "team_size": "3",
+   "batch": "Summer 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Huddlefire",
+   "industries": "B2B|Marketing",
+   "one_liner": "Turbocharge customer acquisition through exclusive SaaS partnerships",
+   "team_size": "2",
+   "batch": "Winter 2021",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Firstbase.io",
+   "industries": "B2B|Operations",
+   "one_liner": "The all-in-one startup operating system",
+   "team_size": "50",
+   "batch": "Winter 2021",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Mindee",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "AI Document Understanding API",
+   "team_size": "60",
+   "batch": "Winter 2021",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "LiveFlow",
+   "industries": "B2B|Finance and Accounting",
+   "one_liner": "The Unified AI-ERP & FP&A Platform",
+   "team_size": "51",
+   "batch": "Winter 2021",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Alokai",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Frontend Platform for eCommerce",
+   "team_size": "100",
+   "batch": "Winter 2021",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Pagaloop",
+   "industries": "Fintech|Payments",
+   "one_liner": "Pay, Get Paid and Extend Cash Flow using your Credit Card as\u2026",
+   "team_size": "23",
+   "batch": "Winter 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Spline",
+   "industries": "B2B|Productivity",
+   "one_liner": "Design and collaborate in multiple dimensions.",
+   "team_size": "25",
+   "batch": "Winter 2021",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "REGENT",
+   "industries": "Industrials|Aviation and Space",
+   "one_liner": "All-electric seagliders for fast, affordable regional transportation",
+   "team_size": "40",
+   "batch": "Winter 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Gigs",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "The OS for Embedded Telecom",
+   "team_size": "150",
+   "batch": "Winter 2021",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Hedgehog",
+   "industries": "Fintech",
+   "one_liner": "Cryptocurrency Robo-adviser. Buy. Balance. Relax.",
+   "team_size": "5",
+   "batch": "Summer 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Gobillion",
+   "industries": "Consumer",
+   "one_liner": "Pinduoduo for India",
+   "team_size": "10",
+   "batch": "Summer 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Fingo Africa",
+   "industries": "Fintech",
+   "one_liner": "A neobank for Africa's 500 million youth",
+   "team_size": "8",
+   "batch": "Summer 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "BoldVoice",
+   "industries": "Consumer",
+   "one_liner": "Speech and accent coaching app for non-native English speakers",
+   "team_size": "12",
+   "batch": "Summer 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Warrant",
+   "industries": "B2B|Infrastructure",
+   "one_liner": "Authorization and access control as a service.",
+   "team_size": "3",
+   "batch": "Summer 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Medium Biosciences",
+   "industries": "Healthcare|Diagnostics",
+   "one_liner": "AI-designed Affinity Reagents",
+   "team_size": "6",
+   "batch": "Summer 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Cache",
+   "industries": "Consumer|Food and Beverage",
+   "one_liner": "Online convenience stores fulfilled by tiny, automated dark stores.",
+   "team_size": "2",
+   "batch": "Summer 2021",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Kaso",
+   "industries": "B2B|Supply Chain and Logistics",
+   "one_liner": "AI group purchasing for restaurants",
+   "team_size": "20",
+   "batch": "Winter 2022",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Numida",
+   "industries": "Fintech|Credit and Lending",
+   "one_liner": "Working capital for African micro businesses",
+   "team_size": "115",
+   "batch": "Winter 2022",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Fleek",
+   "industries": "B2B|Retail",
+   "one_liner": "A B2B marketplace for wholesale second hand fashion",
+   "team_size": "100",
+   "batch": "Winter 2022",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "AYC Fund",
+   "industries": "Fintech|Asset Management",
+   "one_liner": "AI-native crypto hedge fund",
+   "team_size": "1",
+   "batch": "Winter 2022",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "HyperDX",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Open-source, dev-friendly observability.",
+   "team_size": "4",
+   "batch": "Summer 2022",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Craze",
+   "industries": "Consumer|Content",
+   "one_liner": "The AI Video Maker",
+   "team_size": "8",
+   "batch": "Summer 2022",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Juicebox",
+   "industries": "B2B|Recruiting and Talent",
+   "one_liner": "AI-powered talent sourcing for recruiters",
+   "team_size": "65",
+   "batch": "Summer 2022",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Levers",
+   "industries": "B2B|Finance and Accounting",
+   "one_liner": "Automating collection and boosting cashflow for B2B companies",
+   "team_size": "8",
+   "batch": "Summer 2022",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Orchid",
+   "industries": "Healthcare",
+   "one_liner": "AI-powered EHR for independent mental health professionals",
+   "team_size": "4",
+   "batch": "Winter 2023",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Hona",
+   "industries": "B2B|Legal",
+   "one_liner": "Personal Injury Legal Work - Automated",
+   "team_size": "32",
+   "batch": "Winter 2023",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Helios",
+   "industries": "B2B",
+   "one_liner": "Create your AI workforce",
+   "team_size": "3",
+   "batch": "Winter 2023",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Cercli",
+   "industries": "B2B",
+   "one_liner": "AI powered HR and Recruitment for people teams",
+   "team_size": "28",
+   "batch": "Summer 2023",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "Rimward",
+   "industries": "B2B|Security",
+   "one_liner": "Low-false-positive intrusion detection for remote outdoor sites",
+   "team_size": "1",
+   "batch": "Summer 2023",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "AiSDR",
+   "industries": "B2B|Sales",
+   "one_liner": "AI sales prospecting. Replace your SDR with AiSDR",
+   "team_size": "5",
+   "batch": "Summer 2023",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "DryMerge",
+   "industries": "B2B",
+   "one_liner": "AI that updates your CRM for you",
+   "team_size": "4",
+   "batch": "Winter 2024",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Ellipsis",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "Cloud platform for coding agents",
+   "team_size": "2",
+   "batch": "Winter 2024",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Focal",
+   "industries": "Consumer|Content",
+   "one_liner": "AI video creation tool for TV shows and movies",
+   "team_size": "2",
+   "batch": "Winter 2024",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Mem0",
+   "industries": "B2B|Infrastructure",
+   "one_liner": "The Memory layer for AI Agents",
+   "team_size": "10",
+   "batch": "Summer 2024",
+   "icp": "1",
+   "borderline": "0"
+  },
+  {
+   "name": "ideate.xyz",
+   "industries": "B2B|Engineering, Product and Design",
+   "one_liner": "ideate.xyz is an AI-powered 3D art suite on the web",
+   "team_size": "2",
+   "batch": "Summer 2024",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Palmier",
+   "industries": "Consumer|Content",
+   "one_liner": "Video editor built for AI",
+   "team_size": "2",
+   "batch": "Summer 2024",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Starcloud",
+   "industries": "Industrials|Aviation and Space",
+   "one_liner": "Data centers in space",
+   "team_size": "12",
+   "batch": "Summer 2024",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "pap!",
+   "industries": "Consumer",
+   "one_liner": "Agents that earn consumers dollars when they shop, travel, and live.",
+   "team_size": "3",
+   "batch": "Summer 2024",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Raycaster",
+   "industries": "B2B|Productivity",
+   "one_liner": "AI for life sciences documents",
+   "team_size": "3",
+   "batch": "Fall 2024",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Ember",
+   "industries": "Healthcare",
+   "one_liner": "AI RCM. Increase net revenue by 16%. ",
+   "team_size": "25",
+   "batch": "Fall 2024",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Karoo",
+   "industries": "Fintech|Consumer Finance",
+   "one_liner": "AI native consumer lending platform for underserved Americans",
+   "team_size": "3",
+   "batch": "Winter 2025",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "AfterQuery",
+   "industries": "B2B|Infrastructure",
+   "one_liner": "Applied research lab curating data solutions for foundation model\u2026",
+   "team_size": "30",
+   "batch": "Winter 2025",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Frekil",
+   "industries": "Healthcare",
+   "one_liner": "RWE Generation in minutes",
+   "team_size": "2",
+   "batch": "Spring 2025",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Almond",
+   "industries": "Industrials|Manufacturing and Robotics",
+   "one_liner": "A dual-arm robot built for physical AI.",
+   "team_size": "6",
+   "batch": "Spring 2025",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Beluga",
+   "industries": "B2B|Marketing",
+   "one_liner": "Creator marketing that scales like paid ads",
+   "team_size": "3",
+   "batch": "Spring 2025",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Foundation Industries",
+   "industries": "Industrials",
+   "one_liner": "We supply hard tech companies with critical components.",
+   "team_size": "5",
+   "batch": "Spring 2025",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Preseen",
+   "industries": "B2B|Analytics",
+   "one_liner": "The AI forecasting company for global macro events. ",
+   "team_size": "1",
+   "batch": "Summer 2025",
+   "icp": "0",
+   "borderline": "1"
+  },
+  {
+   "name": "Liva AI",
+   "industries": "B2B",
+   "one_liner": "Audio & Video Data",
+   "team_size": "4",
+   "batch": "Summer 2025",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Overdrive Health",
+   "industries": "Healthcare|Healthcare Services",
+   "one_liner": "AI-Native Medical Billing Services",
+   "team_size": "1",
+   "batch": "Winter 2026",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Taiga",
+   "industries": "Healthcare|Healthcare Services",
+   "one_liner": "Autonomous medical billing",
+   "team_size": "2",
+   "batch": "Spring 2026",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Rindler",
+   "industries": "B2B|Infrastructure",
+   "one_liner": "The translation layer between AI agents and the web",
+   "team_size": "2",
+   "batch": "Summer 2026",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "DeepReach Inc.",
+   "industries": "B2B",
+   "one_liner": "Real-world data network for robots & world models",
+   "team_size": "6",
+   "batch": "Summer 2026",
+   "icp": "0",
+   "borderline": "0"
+  },
+  {
+   "name": "Pluto",
+   "industries": "Consumer|Job and Career Services",
+   "one_liner": "AI voice agent that helps professionals get discovered",
+   "team_size": "5",
+   "batch": "Summer 2026",
+   "icp": "0",
+   "borderline": "0"
+  }
+ ],
  "n": 120,
  "positives": 30,
  "borderline": 21,

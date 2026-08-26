@@ -162,3 +162,18 @@ table.data td.num { font-variant-numeric: tabular-nums; }
 .err .why { font-size: 14px; color: var(--sub); }
 .err .why em { font-style: normal; color: var(--ink); }
 @media (max-width: 720px) { .err { grid-template-columns: 1fr; gap: 2px; } }
+
+/* The lead form: four fields, which is everything a signup form gives you. */
+.lead-form { padding: 14px; border-top: 1px solid var(--hair); display: grid; gap: 12px; }
+.lead-form label { display: block; font: 11px/1.6 var(--mono); letter-spacing: .1em;
+  text-transform: uppercase; color: var(--faint); }
+.lead-form input, .lead-form textarea {
+  display: block; width: 100%; margin-top: 5px; background: var(--paper); color: var(--ink);
+  border: 1px solid var(--hair); padding: 9px 11px; font: 15px/1.5 var(--serif);
+  text-transform: none; letter-spacing: 0; resize: vertical;
+}
+.lead-form input:focus, .lead-form textarea:focus { outline: 2px solid var(--ox); outline-offset: -2px; }
+.row3 { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr) minmax(0,1fr); gap: 12px; }
+@media (max-width: 700px) { .row3 { grid-template-columns: minmax(0,1fr); } }
+.readout dd.yes { color: var(--ok); }
+.readout dd.no { color: var(--bad); }
