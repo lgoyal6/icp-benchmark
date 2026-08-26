@@ -11,7 +11,23 @@
 </head>
 <body>
 
-<header class="gut">
+<nav class="topbar">
+  <a class="brand" href="https://lakshgoyal.com">Laksh Goyal<span>.</span></a>
+  <div class="navlinks">
+    <a href="https://github.com/lgoyal6/icp-benchmark">GitHub</a>
+    <a href="https://www.linkedin.com/in/lakshgoyal">LinkedIn</a>
+  </div>
+</nav>
+<nav class="tabs" aria-label="Sections">
+    <a href="#sec-home">Home</a>
+    <a href="#sec-try">Try it</a>
+    <a href="#sec-filters">Filters</a>
+    <a href="#sec-cost">Cost</a>
+    <a href="#sec-axes">Axes</a>
+    <a href="#sec-limits">Limits</a>
+</nav>
+
+<header id="sec-home" class="gut">
   <div>
     <div class="eyebrow">lgoyal6 / icp-benchmark</div>
     <h1>icp&#8209;benchmark<span class="dot">.</span></h1>
@@ -34,7 +50,7 @@
   </dl>
 </header>
 
-<section class="gut">
+<section class="gut" id="sec-try">
   <div class="eyebrow">Try it</div>
   <h2>Score a company the set has never seen</h2>
   <p class="lead">
@@ -98,7 +114,7 @@
   </div>
 </section>
 
-<section class="gut">
+<section class="gut" id="sec-filters">
   <div class="eyebrow">Figure 1</div>
   <h2>What a filter actually buys you</h2>
   <p class="lead">
@@ -153,7 +169,7 @@
   </div>
 </section>
 
-<section class="gut">
+<section class="gut" id="sec-cost">
   <div class="eyebrow">Figure 2</div>
   <h2>What it costs per customer you actually find</h2>
   <p class="lead">
@@ -175,7 +191,7 @@
   </div>
 </section>
 
-<section class="gut">
+<section class="gut" id="sec-axes">
   <div class="eyebrow">Figure 3</div>
   <h2>Which axis actually fails, and every company it failed on</h2>
   <p class="lead">
@@ -217,7 +233,7 @@
   </div>
 </section>
 
-<section class="gut">
+<section class="gut" id="sec-limits">
   <div class="eyebrow">Figure 4</div>
   <h2>Where it loses</h2>
   <ul class="map">
@@ -262,5 +278,6 @@
 
 <script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
 <script src="app.js"></script>
+<script src="nav.js"></script>
 </body>
 </html>
