@@ -1,3 +1,10 @@
+<a href="https://lgoyal6.github.io/icp-benchmark/">
+  <img alt="icp-benchmark - open the live demo" src="docs/og.png">
+</a>
+
+**[Open the live demo](https://lgoyal6.github.io/icp-benchmark/)** - Pick a
+filter, see what it costs in leads and in dollars, and read every mistake it made by name.
+
 # ICP benchmark - 120 real YC companies, hand-labeled
 
 A labeled evaluation set and a scoring harness for the question "is this inbound lead
@@ -7,9 +14,6 @@ The point is not the classifier. The point is that you cannot tune an ICP filter
 have never measured, and measuring it requires a labeled set with hard negatives in it.
 
 ---
-
-**[See it: lgoyal6.github.io/icp-benchmark](https://lgoyal6.github.io/icp-benchmark/)** - pick a
-filter, see what it costs in leads and in dollars, and read every mistake it made by name.
 
 ## The short version
 
